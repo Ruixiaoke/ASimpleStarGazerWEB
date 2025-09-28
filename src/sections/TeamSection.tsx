@@ -14,7 +14,7 @@ const teamMembers = [
   {
     name: "Paco",
     role: "Full-stack Developer",
-    link: "https://github.com/pacodev",
+    link: "https://www.linkedin.com/in/depeng-sun/",
     avatar: "",
   },
   {
@@ -35,6 +35,12 @@ const teamMembers = [
     link: "https://github.com/irene-ai",
     avatar: "",
   },
+  {
+    name: "星空君说宇宙",
+    role: "project advisor",
+    link: "https://space.bilibili.com/57859809",
+    avatar: "",
+  }
 ];
 
 export function TeamSection() {

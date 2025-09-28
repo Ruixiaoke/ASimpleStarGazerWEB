@@ -59,8 +59,8 @@ VITE_FORMSPREE_ENDPOINT=https://formspree.io/f/yourFormId
 ## 📄 GitHub Pages 部署
 
 1. **设置 base 路径**（若部署到项目页而非用户根域）：
+   - Vite 默认会使用根路径 `/`；若仓库部署在 `https://<用户名>.github.io/<仓库名>/`，请在构建前设置 `VITE_BASE_PATH`，例如 PowerShell：`set VITE_BASE_PATH=/ASimpleStarGazer/`。
    - 可在 `package.json` 增加 `"homepage": "https://<用户名>.github.io/<仓库名>/"`（辅助部分工具）。
-   - 构建前设置环境变量，例如 PowerShell：`set VITE_BASE_PATH=/ASimpleStarGazer/`。
 
 2. **新增 GitHub Actions 工作流**（`.github/workflows/deploy.yml`）：
 

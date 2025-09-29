@@ -36,7 +36,7 @@ export function SiteHeader() {
         <div className="hidden md:flex">
           <Button asChild size="sm" variant="primary" className="gap-2">
             <a
-              href="https://github.com/RickZhou0527/ASimpleStarGazer"
+              href="https://github.com/Ruixiaoke/ASimpleStarGazer"
               target="_blank"
               rel="noreferrer"
             >
@@ -69,7 +69,7 @@ export function SiteHeader() {
             ))}
             <Button asChild size="sm" variant="primary" className="mt-2">
               <a
-                href="https://github.com/RickZhou0527/ASimpleStarGazer"
+                href="https://github.com/Ruixiaoke/ASimpleStarGazer"
                 target="_blank"
                 rel="noreferrer"
               >

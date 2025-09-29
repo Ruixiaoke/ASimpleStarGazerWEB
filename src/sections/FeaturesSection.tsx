@@ -2,6 +2,7 @@
 import {
   Bot,
   Cloud,
+  Globe,
   Languages,
   Telescope,
   Users,
@@ -45,6 +46,12 @@ const features = [
     description:
       "Capture and share Xiaohongshu-style stories, photos, and clips with the stargazer collective.",
     icon: Users,
+  },
+  {
+    title: "Global Coverage",
+    description:
+      "Access stargazing forecasts and sky maps anywhere on Earth — from city rooftops to remote deserts — with consistent accuracy across regions.",
+    icon: Globe,
   },
 ];
 

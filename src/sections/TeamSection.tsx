@@ -8,7 +8,7 @@ const teamMembers = [
   {
     name: "Rick",
     role: "Lead Developer",
-    link: "https://github.com/RickZhou0527",
+    link: "https://www.linkedin.com/in/datong-zhou/",
     avatar: "",
   },
   {
@@ -32,12 +32,12 @@ const teamMembers = [
   {
     name: "Irene",
     role: "AI Developer",
-    link: "https://github.com/irene-ai",
+    link: "https://www.linkedin.com/in/xiyan-huang-ba4b44306",
     avatar: "",
   },
   {
     name: "星空君说宇宙",
-    role: "project advisor",
+    role: "Project Advisor",
     link: "https://space.bilibili.com/57859809",
     avatar: "",
   }
@@ -84,7 +84,7 @@ export function TeamSection() {
               }}
             >
               <Card className="group h-full border-border/40 bg-card/70">
-                <CardHeader className="flex items-center gap-4">
+                <CardHeader className="flex flex-col items-center gap-4 text-center">
                   <Avatar>
                     {member.avatar ? (
                       <AvatarImage src={member.avatar} alt={`${member.name} avatar`} />
@@ -101,7 +101,7 @@ export function TeamSection() {
                     <p className="text-sm text-muted-foreground">{member.role}</p>
                   </div>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="flex justify-center">
                   <a
                     href={member.link}
                     target="_blank"

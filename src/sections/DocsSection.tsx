@@ -4,7 +4,7 @@ import { BookOpen, Star } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 
-const repoUrl = "https://github.com/RickZhou0527/ASimpleStarGazer";
+const repoUrl = "https://github.com/Ruixiaoke/ASimpleStarGazer";
 const readmeUrl = `${repoUrl}#readme`;
 
 export function DocsSection() {

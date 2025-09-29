@@ -66,7 +66,7 @@ export function HeroSection() {
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
             <Button asChild size="lg" variant="primary" className="gap-2">
               <a
-                href="https://github.com/RickZhou0527/ASimpleStarGazer"
+                href="https://github.com/Ruixiaoke/ASimpleStarGazer"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -76,7 +76,7 @@ export function HeroSection() {
             </Button>
             <Button asChild size="lg" variant="outline" className="gap-2">
               <a
-                href="https://github.com/RickZhou0527/ASimpleStarGazer#documentation"
+                href="https://github.com/Ruixiaoke/ASimpleStarGazer#documentation"
                 target="_blank"
                 rel="noreferrer"
               >

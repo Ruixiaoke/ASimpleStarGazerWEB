@@ -6,13 +6,23 @@ import react from "@vitejs/plugin-react";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+const normalizeBasePath = (value: string | undefined) => {
+  if (!value || value === "/") {
+    return "/";
+  }
+
+  const trimmed = value.replace(/^\/+/g, "").replace(/\/+$/g, "");
+  return `/${trimmed}/`;
+};
+
+const basePath = normalizeBasePath(process.env.VITE_BASE_PATH);
+
 export default defineConfig({
-  // 固定 base 路径，确保在 GitHub Pages 项目页上能正常工作
-  base: "/ASimpleStarGazerWEB/",
+  // 允许通过 VITE_BASE_PATH 覆盖，默认部署到根目录
+  base: basePath,
   plugins: [react()],
   build: {
-    outDir: "docs",   // 直接输出到 docs 目录，方便 GitHub Pages 部署
-    sourcemap: true,  // 可选：方便调试
+    sourcemap: true, // 可选：方便调试
   },
   resolve: {
     alias: {

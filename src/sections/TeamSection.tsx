@@ -20,7 +20,7 @@ const teamMembers = [
   {
     name: "Victor",
     role: "Product Manager",
-    link: "https://www.linkedin.com/in/victor",
+    link: "https://www.linkedin.com/in/junyan-victor-liu-3099a7184/",
     avatar: "",
   },
   {

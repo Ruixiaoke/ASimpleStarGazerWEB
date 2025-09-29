@@ -15,7 +15,20 @@ const normalizeBasePath = (value: string | undefined) => {
   return `/${trimmed}/`;
 };
 
-const basePath = normalizeBasePath(process.env.VITE_BASE_PATH);
+const repositoryBasePath = (() => {
+  const repository = process.env.GITHUB_REPOSITORY;
+  if (!repository) {
+    return undefined;
+  }
+
+  const segments = repository.split("/");
+  const repoName = segments[segments.length - 1];
+  return repoName ? `/${repoName}/` : undefined;
+})();
+
+const basePath = normalizeBasePath(
+  process.env.VITE_BASE_PATH ?? repositoryBasePath
+);
 
 export default defineConfig({
   // 允许通过 VITE_BASE_PATH 覆盖，默认部署到根目录

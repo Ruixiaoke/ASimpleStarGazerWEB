@@ -26,7 +26,7 @@ const teamMembers = [
   {
     name: "Jack",
     role: "Business Analyst",
-    link: "https://www.linkedin.com/in/jack",
+    link: "https://www.linkedin.com/in/jack-cui-359a16197/",
     avatar: "",
   },
   {

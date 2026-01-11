@@ -1,12 +1,12 @@
-﻿import { SiteHeader } from "@/components/SiteHeader";
-import { DocsSection } from "@/sections/DocsSection";
-import { FeaturesSection } from "@/sections/FeaturesSection";
-import { FooterSection } from "@/sections/FooterSection";
-import { HeroSection } from "@/sections/HeroSection";
-import { SubscribeSection } from "@/sections/SubscribeSection";
-import { TeamSection } from "@/sections/TeamSection";
+import { SiteHeader } from '@/components/SiteHeader';
+import { DocsSection } from '@/sections/DocsSection';
+import { FeaturesSection } from '@/sections/FeaturesSection';
+import { FooterSection } from '@/sections/FooterSection';
+import { HeroSection } from '@/sections/HeroSection';
+import { SubscribeSection } from '@/sections/SubscribeSection';
+import { TeamSection } from '@/sections/TeamSection';
 
-export default function App() {
+export const App = () => {
   return (
     <div className="min-h-screen bg-background font-inter text-foreground">
       <div className="relative">
@@ -22,4 +22,4 @@ export default function App() {
       </div>
     </div>
   );
-}
+};
